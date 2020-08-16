@@ -1,0 +1,178 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{fontawesome}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage[document]{ragged2e}
+\usepackage{amsmath, amsthm, amssymb, amsfonts}
+\usepackage{enumitem,amssymb,graphicx}
+
+\DeclareFontFamily{U}{fontawesomeOne}{}
+\DeclareFontShape{U}{fontawesomeOne}{m}{n}
+    {<-> FontAwesome--fontawesomeone}{}
+\DeclareRobustCommand\FAone{\fontencoding{U}\fontfamily{fontawesomeOne}\selectfont} 
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+    \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\newcommand{\resumeItem}[2]{
+    \item\small{
+        \textbf{#1}{: #2 \vspace{-2pt}}
+    }
+}
+
+\newcommand{\subheading}[4]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        {\small#3} & {\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\subheadingTwo}[2]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\subheadingThree}[6]{
+    \vspace{-1pt}\item
+    \begin{tabular*}{0.98\textwidth}[t]{l@{\extracolsep{\fill}}r}
+        \textbf{#1} & #2 \\
+        {\small#3} & {\small #4} \\
+        {\small#5} & {\small #6} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\subitem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemi}{}
+\renewcommand{\labelitemii}{\scalebox{0.5}{\raisebox{0.65ex}{$\blacksquare$}}}
+
+\newcommand{\subheadingListBegin}{\begin{itemize}[leftmargin=*]}
+\newcommand{\subheadingListEnd}{\end{itemize}}
+
+\newcommand{\subitemListBegin}{\begin{itemize}[leftmargin=*]}
+\newcommand{\subItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+
+\begin{document}
+
+\textbf{\LARGE John Doe}\\
+\href{https://johndoe.me/}{johndoe.me}\\\vspace{\baselineskip} 
+
+{\Centering 
+
+\raisebox{-0.20\height}{\Large \faInbox} \space \href{mailto:john.doe@vanderbilt.edu}{john.doe@vanderbilt.edu} \hfill <======
+\raisebox{-0.20\height}{\Large \faPhone} \space (615) xxx-xxxx \hfill
+\raisebox{-0.20\height}{\Large \faGithub} \space \href{https://github.com/doejohn}{doejohn} \hfill
+\raisebox{-0.20\height}{\Large \faLinkedinSquare} \space \href{https://www.linkedin.com/in/john-doe}{john-doe}
+}
+
+
+\section{Education}
+    \subheadingListBegin
+        \subheading
+        {Vanderbilt University}{Nashville, TN}
+        {BS in Computer Science and Math, Major GPA: 3.xx/4.00}{Expected May 2023}
+    \subheadingListEnd
+
+\section{Skills}
+    \subheadingListBegin
+        \subitem{Languages}
+            {Python, C++, Java, Matlab, Dart, ARM Assembly, HTML/CSS}
+        \subitem{Technologies}
+            {Flask, TensorFlow, Keras, scikit-learn, NLTK, Flutter, MySQL, Pandas, NumPy}
+        \subitem{Other}
+            {Docker, Tableau, Git, Linux/Bash}
+    \subheadingListEnd
+
+\renewcommand{\labelitemi}{}
+
+
+\section{Experience}
+    \subheadingListBegin
+        \subheading
+            {Random Company}{Big City, India}
+            {\textbf{Software Engineering Intern}}{June 2020 -- August 2020}
+            \subitemListBegin
+                \item {Occaecat velit non pariatur culpa quis sunt ea dolor pariatur in. Sit labore reprehenderit consequat dolor excepteur cupidatat ipsum cupidatat aute pariatur dolore nisi ut ut.}
+	            \item {Duis aliquip consectetur nostrud eu commodo id qui duis incididunt consequat anim aliqua non. Voluptate incididunt anim sit veniam do aute eu velit non. Lorem sunt non consequat dolor deserunt sunt aliquip esse et tempor occaecat ex nisi.}
+            \subItemListEnd
+
+        \subheading
+            {IT Department}{Music City, TN}
+            {\textbf{Technology Consultant}}{October 2019 -- May 2020}
+            \subitemListBegin
+                \item {Consequat anim cupidatat dolore esse ad eu consequat velit ad. Consectetur ipsum culpa adipisicing incididunt ullamco cillum in. }
+                \item {Officia excepteur eiusmod irure velit amet labore officia consequat ad. Ullamco dolor eu cillum ad aliqua pariatur officia deserunt aliquip.}
+            \subItemListEnd
+      
+        \subheading
+            {Small Startup}{Collegetown, CA}
+            {\textbf{Venture Capital Intern}}{December 2019 - April 2020}
+            \subitemListBegin
+                \item Elit do nisi nisi ex anim elit nostrud et laboris deserunt anim. Incididunt magna consequat est do labore commodo voluptate.
+                \item Eiusmod aute qui consequat incididunt minim ad cillum duis eiusmod. Eu id dolor irure qui consectetur id labore adipisicing voluptate reprehenderit laborum ad amet. 
+            \subItemListEnd
+    \subheadingListEnd
+
+
+\section{Personal Projects}
+    \subheadingListBegin
+        \subheadingTwo
+            {Group Project}{}
+            \subitemListBegin
+                \item {Cupidatat Lorem adipisicing aliqua sunt sint nostrud elit do reprehenderit est do anim magna. Non ipsum do ullamco commodo qui anim deserunt ad ipsum ad veniam sint officia sunt. Enim pariatur aliqua aliqua nulla.}
+            \subItemListEnd
+        
+        \subheadingTwo
+            {Webapp}{}
+            \subitemListBegin
+                \item {Ex esse sunt ad eu esse reprehenderit laboris cupidatat laborum aliqua. Id commodo labore occaecat anim. Exercitation aliqua incididunt veniam laborum amet reprehenderit esse consequat incididunt adipisicing.}
+            \subItemListEnd
+      
+        \subheadingTwo
+            {Mini Project}{}
+            \subitemListBegin
+                \item {Irure adipisicing non duis est cillum id aute. Voluptate ex eu est enim officia consectetur qui commodo aliqua eu ullamco. Non exercitation nostrud Lorem eiusmod culpa mollit.}
+            \subItemListEnd
+    \subheadingListEnd
+
+
+\section{Other}
+    \subheadingListBegin
+        \subitem{Coursework}
+            {Voluptate mollit adipisicing elit pariatur in anim quis nisi ea magna cillum qui exercitation.}
+        \subitem{Extracurricular}
+            {Nulla est ad nisi ex do exercitation irure ea nostrud ad pariatur.}
+    \subheadingListEnd
+
+    
+\end{document}
