@@ -1,1 +1,1 @@
-# latex-resume
+# Resume format in LaTeX
